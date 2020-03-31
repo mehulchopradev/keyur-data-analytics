@@ -1,0 +1,24 @@
+P(6 times in a row) = P(H) * P(2) * P(3)
+			1/2 * 1/2 * 1/2
+
+P(GG) = P(G) * P(G|first event was a green)
+      = 5/14 * 4/13
+
+
+H - this email is spam
+E - it has suspect words
+
+P(is Spam|has suspect words) = (0.82 * 0.25) / 0.355 = 0.5774 = 57.74%
+
+		Spam			Not Spam
+		25%			75%
+Suspect		82%			20% (false negative)
+words
+
+No suspect	18%			80%
+words           (false positive)
+
+P(had suspect words | was marked as spam) = 0.82
+P(was marked as spam) = 0.25
+P(had suspect words under all scenarios) = (P(had suspect words | was marked as spam) * P(spam)) + (P(had suspect words | not marked as spam) * P(not marked as spam))
+P(had suspect words under all scenarios) = (0.82 * 0.25) + (0.75 * 0.2) = 0.355
